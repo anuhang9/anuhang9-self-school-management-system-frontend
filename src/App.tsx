@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { FloatingShape } from './components/floating-shape'
 import { Home } from './pages/Home'
+import { SignUp } from './pages/sign-up'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <FloatingShape color="bg-lime-500" size="w-32 h-32" top="40%" left="-10%" delay={2}/>
     <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/signup' element={<SignUp/>}/>
     </Routes>
     </div>
   )

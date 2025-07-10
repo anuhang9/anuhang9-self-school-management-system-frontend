@@ -1,8 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { FloatingShape } from './components/floating-shape'
-import { Home } from './pages/Home'
+import { Home } from './pages/home'
 import { SignUp } from './pages/sign-up'
+import { Login } from './pages/login'
+import { EmailVerify } from './pages/email-verify'
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/signup' element={<SignUp/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/email-verify' element={<EmailVerify/>}/>
     </Routes>
     </div>
   )
